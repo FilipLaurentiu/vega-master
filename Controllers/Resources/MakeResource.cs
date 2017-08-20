@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
+namespace vega.Controllers.Resources
+{
+    public class MakeResource
+    {
+        public int Id { get; set; }
+
+       
+        public string Name { get; set; }
+        public ICollection<ModelResource> Models { get; set; }
+
+        public MakeResource()
+        {
+            Models = new Collection<ModelResource>();
+        }
+    }
+}
