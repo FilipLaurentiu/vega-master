@@ -1,10 +1,10 @@
+import { VehicleService } from './../../services/vehicle.service';
 import { Component, OnInit } from '@angular/core';
-import { VehicleService } from "../../services/vehicle.service";
 
 @Component({
-    selector: 'app-vehicle-form',
-    templateUrl: './vehicle-form.component.html',
-    styleUrls: ['./vehicle-form.component.css']
+  selector: 'app-vehicle-form',
+  templateUrl: './vehicle-form.component.html',
+  styleUrls: ['./vehicle-form.component.css']
 })
 export class VehicleFormComponent implements OnInit {
   makes: any[]; 
@@ -27,4 +27,3 @@ export class VehicleFormComponent implements OnInit {
     this.models = selectedMake ? selectedMake.models : [];
   }
 }
-

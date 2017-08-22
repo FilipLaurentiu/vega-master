@@ -18,6 +18,7 @@ namespace vega.Controllers
         {
             this.mapper = mapper;
             this.context = context;
+            
         }
 
         [HttpGet("/api/features")]
